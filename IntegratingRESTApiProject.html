@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="IntegratingRESTApiProject.css">
+</head>
+<body>
+    <div>
+        <h1>NoteBook</h1>
+        <label for="searchNotes">Search Notes:</label>
+        <input type="text" id="searchNotes" name="searchNotes">
+        <button id="searchButton">Search</button>
+        <h2>Total notes: <span id="totalNotes">0</span></h2>
+        <h3>Showing:<span id="searchCount">0</span></h3>
+    </div>
+    <form id="noteForm">
+        <label for="noteTitle">Note Title:</label>
+        <input type="text" id="noteTitle" name="noteTitle" required>
+        <br><br>
+        <label for="noteDesc">Notes desc:</label>
+        <textarea id="noteDesc" name="noteDesc" required></textarea>
+        <br><br>
+        <button type="submit">Add to book</button>
+    </form>
+    <ul id="notesList"></ul>
+</body>
+<script src="IntegratingRESTApiProject.js"></script>
+</html>
